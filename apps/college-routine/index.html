@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routine</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            --light-blue: hsl(270, 64%, 91%);
+            width: 100%;
+            display: grid;
+            font-family: "Monaspace Neon";
+            color: hsl(270, 35%, 16%);
+        }
+
+        .heading-box {
+            display: grid;
+            justify-items: center;
+            padding: 0.1rem 1rem;
+            background-image: linear-gradient(to left, white, hsl(270, 65%, 56%), hsl(270, 65%, 56%), white);
+        }
+
+        .heading-box h1 {
+            color: white;
+            font-size: 1.75rem;
+        }
+
+        .heading-box span {
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .routine {
+            display: grid;
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        .routine-box {
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr 2fr 2fr 2fr;
+        }
+
+        .routine-row {
+            display: grid;
+            grid-column: 1 / -1;
+            grid-template-columns: subgrid;
+            border-bottom: 1px solid var(--light-blue);
+        }
+
+        .routine-row:first-child {
+            border-top: 1px solid var(--light-blue);
+        }
+
+        .routine-row>* {
+            /* background: rgb(231, 243, 255); */
+            display: grid;
+            align-items: center;
+            justify-items: start;
+            padding: 1.5rem 0.3rem;
+            border-left: 1px solid var(--light-blue);
+        }
+
+        .routine-row>*:last-child {
+            border-right: 1px solid var(--light-blue);
+        }
+
+        .routine-row>div {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0 0.5rem;
+        }
+
+        .routine-row h2 {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .span-2 {
+            grid-column: span 2;
+        }
+
+        .subtext {
+            font-size: 0.8rem;
+            /* color: #22252F; */
+            opacity: 0.8;
+        }
+
+        .semibold {
+            font-weight: 600;
+        }
+
+        em {
+            font-style: normal;
+            font-family: "Monaspace Radon";
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .blue {
+            color: hsl(270, 84%, 52%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="routine">
+        <div class="heading-box blue">
+            <h1>CSE Routine</h1>
+            <span class="subtext">Room no. <strong>25</strong></span>
+        </div>
+
+        <div class="routine-box">
+
+            <div class="routine-row blue">
+                <div> </div>
+
+                <div>
+                    <h2>1st</h2>
+                    <span class="subtext">(09-10 AM)</span>
+                </div>
+
+                <div>
+                    <h2>2nd</h2>
+                    <span class="subtext">(10-11 AM)</span>
+                </div>
+
+                <div>
+                    <h2>3rd</h2>
+                    <span class="subtext">(11-12 AM)</span>
+                </div>
+
+                <div>
+                    <h2>4th</h2>
+                    <span class="subtext">(12-01 PM)</span>
+                </div>
+
+                <div>
+                    <h2>RECESS</h2>
+                    <span class="subtext">(01-02 PM)</span>
+                </div>
+
+                <div>
+                    <h2>5th</h2>
+                    <span class="subtext">(02-03 PM)</span>
+                </div>
+
+                <div>
+                    <h2>6th</h2>
+                    <span class="subtext">(03-04 PM)</span>
+                </div>
+
+                <div>
+                    <h2>7th</h2>
+                    <span class="subtext">(04-05 PM)</span>
+                </div>
+
+            </div>
+
+            <div class="routine-row">
+                <span class="semibold blue">MON</span>
+                <span>Applied Physics-B</span>
+                <span>Fundamentals of Elect. & EC. Engg</span>
+                <span>Basic Engg. Math</span>
+                <div>
+                    <span>ICT Tools <em>NH</em></span>
+                </div>
+                <span>-*-</span>
+                <div class="span-2">
+                    <span>Fundamentals of IT Systems <em>Lab</em></span>
+                </div>
+                <span>OER</span>
+            </div>
+
+            <div class="routine-row">
+                <span class="semibold blue">TUE</span>
+                <span>Fundamentals of Elect. & EC. Engg</span>
+                <span>Applied Physics-B</span>
+                <span class="span-2">Electrical & EC. Workshop</span>
+                <span>-*-</span>
+                <span>Fundamentals of IT Systems</span>
+                <div class="span-2">
+                    <span>ICT Tools <em>Lab</em></span>
+                </div>
+            </div>
+
+            <div class="routine-row">
+                <span class="semibold blue">WED</span>
+                <span>Basic Engg. Math</span>
+                <span>Indian Constitution</span>
+                <span>Applied Physics-B</span>
+                <span>Fundamentals of IT Systems</span>
+                <span>-*-</span>
+                <div>
+                    <span>Fundamentals of IT Systems <em>NH</em></span>
+                </div>
+                <div class="span-2">
+                    <span>Fundamentals of Elect. & EC. Engg. <em>Lab</em></span>
+                </div>
+            </div>
+
+            <div class="routine-row">
+                <span class="semibold blue">THU</span>
+                <span>Fundamentals of IT Systems</span>
+                <div>
+                    <span>Basic Engg. Math <em>NH</em></span>
+                </div>
+
+                <span>ICT Tools</span>
+                <div>
+                    <span>Applied Physics-B <em>NH</em></span>
+                </div>
+
+                <span>-*-</span>
+                <div>
+                    <span>Indian Constitution <em>NH</em></span>
+                </div>
+
+                <div class="span-2">
+                    <span>Applied Physics-B <em>Lab</em></span>
+                </div>
+            </div>
+
+            <div class="routine-row">
+                <span class="semibold blue">FRI</span>
+                <span>Yoga</span>
+                <div class="span-2">
+                    <span>Applied Physics-B <em>Lab</em></span>
+                </div>
+                <span>Fundamentals of Elect. & EC. Engg.</span>
+                <span>-*-</span>
+                <span>Basic Engg. Math</span>
+                <div class="span-2">
+                    <span>Fundamentals of IT Systems <em>Lab</em></span>
+                </div>
+            </div>
+
+            <div class="routine-row">
+                <span class="semibold blue">SAT</span>
+                <span>Swachhta Abhiyan / NSS Activity</span>
+                <span>Basic Engg. Math</span>
+                <div class="span-2">
+                    <span>Fundamentals of Elect. & EC. Engg. <em>Lab</em></span>
+                </div>
+                <span>-*-</span>
+                <span class="span-2">Electrical & EC. Workshop</span>
+                <span>Sports</span>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

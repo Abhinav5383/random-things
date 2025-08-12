@@ -1,0 +1,36 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color-scheme: dark;
+}
+
+#canvas-box {
+	width: 100%;
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	position: relative;
+}
+
+#canvas {
+	margin: 0;
+	padding: 0;
+	aspect-ratio: unset;
+	background-color: white;
+}
+
+#button {
+	position: absolute;
+	bottom: 2rem;
+	left: 50%;
+	transform: translateX(-50%);
+	outline: transparent;
+	border: none;
+	background-color: rebeccapurple;
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+	border-radius: 0.2rem;
+	cursor: pointer;
+}
